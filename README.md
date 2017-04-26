@@ -1,1 +1,1 @@
-# [Petridish server map]
+# [PD server map]
