@@ -226,9 +226,6 @@ $(document).on("keydown", function(event){
     //console.log(event.which);
     //console.log(event);
 
-    // check if server list present
-    if (!window.serverModesList){ window.serverModesList = smc.getServerModeList();}
-
     // toggle map if M pressed
     if (event.which == 77){
         smc.toggleServerMap();
@@ -274,6 +271,8 @@ var smc = {
         map = $( map );
         $('body').append(map);
     },
+    drawBlock: function(block){},
+    drawServer: function(server){},
     toggleServerMap: function(){
         if ($('#server-map').length){
             console.log('map is open');
@@ -295,24 +294,29 @@ var smc = {
     },
     getServerModeList: function(){
         // get server modes list by server name
+        var list;
+        if (window.serverModesList){
+            list = window.serverModesList;
+        } else {
+            list = {};
+            $('.server-list .server-item').toArray().forEach(
+                function(el){
+                    list[el.getAttribute('autorun')] = el.getAttribute('mode');
+                }
+            );
+        }
 
-        var list = {};
-        $('.server-list .server-item').toArray().forEach(
-            function(el){
-                list[el.getAttribute('autorun')] = el.getAttribute('mode');
-            }
-        );
         return list;
     },
     groupByServerType: function(winners){
         // group winners by server type
-        var sorted = {}, mode;
+        var sorted = {}, mode, modeList = smc.getServerModeList();
 
         for (var server in winners) {
             if (winners.hasOwnProperty(server)) {
                 // do stuff
 
-                mode = window.serverModesList[server];
+                mode = modeList[server];
 
                 if (!sorted[mode]){
                     sorted[mode] = [];
