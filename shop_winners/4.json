@@ -1,0 +1,177 @@
+{
+  "periodSize": 4,
+  "nextPeriod": 1493409600000,
+  "winners": {
+    "solar": {
+      "serverId": "solar",
+      "fullNickName": "[Ural]ЛНР",
+      "skinId": "71389",
+      "isPersonal": false,
+      "clanPrefix": "[ural]",
+      "score": 46394,
+      "lifeInterval": 1282
+    },
+    "galaxy": {
+      "serverId": "galaxy",
+      "fullNickName": "ℳǺŨ₦₮Ꮍ",
+      "skinId": "101370",
+      "isPersonal": true,
+      "clanPrefix": "",
+      "score": 75162,
+      "lifeInterval": 1015
+    },
+    "earth": {
+      "serverId": "earth",
+      "fullNickName": "[OF]◌Sрir๑l`k๑◌",
+      "skinId": "103076",
+      "isPersonal": false,
+      "clanPrefix": "[of]",
+      "score": 140291,
+      "lifeInterval": 1234
+    },
+    "russia": {
+      "serverId": "russia",
+      "fullNickName": "LaN1Афродита",
+      "skinId": "102829",
+      "isPersonal": true,
+      "clanPrefix": "",
+      "score": 47120,
+      "lifeInterval": 1482
+    },
+    "universe": {
+      "serverId": "universe",
+      "fullNickName": "[OF]◌Sрir๑l`k๑◌",
+      "skinId": "103076",
+      "isPersonal": false,
+      "clanPrefix": "[of]",
+      "score": 128162,
+      "lifeInterval": 1495
+    },
+    "hardcore1": {
+      "serverId": "hardcore1",
+      "fullNickName": "Gnev",
+      "skinId": "3849",
+      "isPersonal": true,
+      "clanPrefix": "",
+      "score": 71850,
+      "lifeInterval": 572
+    },
+    "megasplit2": {
+      "serverId": "megasplit2",
+      "fullNickName": "Rape me.",
+      "skinId": "100608",
+      "isPersonal": true,
+      "clanPrefix": "",
+      "score": 93203,
+      "lifeInterval": 1050
+    },
+    "team1": {
+      "serverId": "team1",
+      "fullNickName": "Darkness in me",
+      "skinId": "16331",
+      "isPersonal": true,
+      "clanPrefix": "",
+      "score": 9522,
+      "lifeInterval": 517
+    },
+    "crazysplit4": {
+      "serverId": "crazysplit4",
+      "fullNickName": "Ҝ₦ℑℱℯ ᎮℜǾ",
+      "skinId": "86899",
+      "isPersonal": true,
+      "clanPrefix": "",
+      "score": 13947,
+      "lifeInterval": 851
+    },
+    "crazysplit5": {
+      "serverId": "crazysplit5",
+      "fullNickName": "【νιρ】↠₤Σ₲Σ₦Đᴳᴼᴰ",
+      "skinId": "97002",
+      "isPersonal": false,
+      "clanPrefix": "【νιρ】",
+      "score": 58504,
+      "lifeInterval": 502
+    },
+    "crazysplit7": {
+      "serverId": "crazysplit7",
+      "fullNickName": "〖Skβ〗ForEver永远",
+      "skinId": "101669",
+      "isPersonal": false,
+      "clanPrefix": "〖skβ〗",
+      "score": 64322,
+      "lifeInterval": 353
+    },
+    "crazysplit8": {
+      "serverId": "crazysplit8",
+      "fullNickName": "xy☢fxst?☢zd",
+      "skinId": "99137",
+      "isPersonal": true,
+      "clanPrefix": "",
+      "score": 46189,
+      "lifeInterval": 158
+    },
+    "crazysplit12": {
+      "serverId": "crazysplit12",
+      "fullNickName": "Cash Me Outside",
+      "skinId": "103542",
+      "isPersonal": true,
+      "clanPrefix": "",
+      "score": 15305,
+      "lifeInterval": 902
+    },
+    "crazysplit13": {
+      "serverId": "crazysplit13",
+      "fullNickName": "❖♅ ʇἶᏳєℛ⊸〠乙ใ",
+      "skinId": "92796",
+      "isPersonal": true,
+      "clanPrefix": "",
+      "score": 69464,
+      "lifeInterval": 354
+    },
+    "crazysplit14": {
+      "serverId": "crazysplit14",
+      "fullNickName": "ၣᗪℋ乡�ꝖαΨᵴ๏ᵴ¥₮",
+      "skinId": "89002",
+      "isPersonal": true,
+      "clanPrefix": "",
+      "score": 82676,
+      "lifeInterval": 304
+    },
+    "hardcoreexp1": {
+      "serverId": "hardcoreexp1",
+      "fullNickName": "!!!БРОДЯГА!!!",
+      "skinId": "40175",
+      "isPersonal": true,
+      "clanPrefix": "",
+      "score": 114324,
+      "lifeInterval": 362
+    },
+    "hardcoreexp2": {
+      "serverId": "hardcoreexp2",
+      "fullNickName": "MaKaR",
+      "skinId": "6647",
+      "isPersonal": true,
+      "clanPrefix": "",
+      "score": 88705,
+      "lifeInterval": 365
+    },
+    "crazy1": {
+      "serverId": "crazy1",
+      "fullNickName": "Ч̲а̲й̲з̲е̲р̲.",
+      "skinId": "103432",
+      "isPersonal": true,
+      "clanPrefix": "",
+      "score": 97734,
+      "lifeInterval": 388
+    },
+    "megasplit1": {
+      "serverId": "megasplit1",
+      "fullNickName": "Pain Nagato.",
+      "skinId": "103639",
+      "isPersonal": true,
+      "clanPrefix": "",
+      "score": 67067,
+      "lifeInterval": 661
+    }
+  }
+}

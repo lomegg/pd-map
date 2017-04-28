@@ -216,7 +216,232 @@ window.serverModesList = {
     "clanhousetournament":	"CLANHOUSE",
     "clanhousetest":	"CLANHOUSE"
 };
+window.serverImportanceList = {
+    "kraken1":	"1",
+    "team1":	"1",
+    "team8":	"1",
+    "team10":	"1",
+    "arena1":	"1",
+    "arena2":	"1",
+    "arena3":	"1",
+    "arena4":	"1",
+    "arena5":	"1",
+    "arena6":	"1",
+    "arena7":	"1",
+    "arena8":	"1",
+    "arena9":	"1",
+    "arena10":	"1",
+    "arena11":	"1",
+    "arena12":	"1",
+    "arena13":	"1",
+    "arena14":	"1",
+    "arena15":	"1",
+    "arena16":	"1",
+    "arena17":	"1",
+    "arena18":	"1",
+    "arena19":	"1",
+    "arena20":	"1",
+    "fatboy1":	"1",
+    "fatboy2":	"1",
+    "fatboy3":	"1",
+    "fatboy4":	"1",
+    "fatboy5":	"1",
+    "fatboy6":	"1",
+    "fatboy7":	"1",
+    "fatboy8":	"1",
+    "fatboy9":	"1",
+    "fatboy10":	"1",
+    "fatboy11":	"1",
+    "fatboy12":	"1",
+    "fatboy18":	"1",
+    "fatboy13":	"1",
+    "fatboy15":	"1",
+    "fatboy21":	"1",
+    "fatboy23":	"1",
+    "fatboy16":	"1",
+    "fatboy17":	"1",
+    "fatboy34":	"1",
+    "fatboy35":	"1",
+    "fatboy36":	"1",
+    "fatboy37":	"1",
+    "fatboy38":	"1",
+    "fatboy39":	"1",
+    "fatboy40":	"1",
+    "fatboy41":	"1",
+    "fatboy42":	"1",
+    "fatboy43":	"1",
+    "fatboy44":	"1",
+    "fatboy45":	"1",
+    "fatboy19":	"1",
+    "fatboy14":	"1",
+    "fatboy20":	"1",
+    "fatboy22":	"1",
+    "fatboy24":	"1",
+    "fatboy25":	"1",
+    "fatboy26":	"1",
+    "fatboy27":	"1",
+    "fatboy28":	"1",
+    "fatboy29":	"1",
+    "fatboy30":	"1",
+    "fatboy31":	"1",
+    "fatboy32":	"1",
+    "fatboy33":	"1",
+    "fatboy46":	"1",
+    "fatboy47":	"1",
+    "snakerdish1":	"1",
+    "crazy1":	"1",
+    "exp1":	"1",
+    "fastfood1":	"1",
+    "fastfood2":	"1",
+    "viruswarsffa6":	"1",
+    "blackhole1":	"1",
+    "blackhole4":	"1",
+    "blackhole5":	"1",
+    "blackhole6":	"1",
+    "blackhole7":	"1",
+    "blackhole8":	"1",
+    "blackhole9":	"1",
+    "solar":	"3",
+    "galaxy":	"2",
+    "earth":	"1",
+    "universe":	"2",
+    "russia":	"1",
+    "nolimit":	"1",
+    "tunnel":	"1",
+    "sky":	"1",
+    "oneshotffa1":	"1",
+    "oneshotmegasplit1":	"1",
+    "oneshotmegasplit20":	"1",
+    "space1":	"1",
+    "crazysplit1":	"1",
+    "crazysplit2":	"1",
+    "crazysplit3":	"1",
+    "crazysplit4":	"1",
+    "crazysplit5":	"1",
+    "crazysplit6":	"1",
+    "crazysplit7":	"1",
+    "crazysplit8":	"1",
+    "crazysplit9":	"1",
+    "crazysplit10":	"1",
+    "crazysplit11":	"1",
+    "crazysplit12":	"1",
+    "crazysplit13":	"1",
+    "crazysplit14":	"1",
+    "crazysplit15":	"1",
+    "crazysplit16":	"1",
+    "crazysplit17":	"1",
+    "crazysplit18":	"1",
+    "crazysplit19":	"1",
+    "crazysplit20":	"1",
+    "crazysplit21":	"1",
+    "eatforspeed1":	"1",
+    "eatforspeed5":	"1",
+    "special1":	"1",
+    "special2":	"1",
+    "special3":	"1",
+    "special4":	"1",
+    "special5":	"1",
+    "megasplit1":	"2",
+    "megasplit2":	"1",
+    "megasplit3":	"1",
+    "megasplit4":	"1",
+    "megasplit10":	"1",
+    "megasplit27":	"1",
+    "megasplit40":	"1",
+    "megasplit5k1":	"1",
+    "megasplit5k2":	"1",
+    "megasplit5k3":	"1",
+    "megasplit5k4":	"1",
+    "megasplit5k5":	"1",
+    "megasplit5k6":	"1",
+    "megasplit5k7":	"1",
+    "megasplit5k8":	"1",
+    "megasplit5k9":	"1",
+    "megasplit5k10":	"1",
+    "megasplit5k18":	"1",
+    "hardcore1":	"1",
+    "hardcore2":	"1",
+    "hardcore3":	"1",
+    "hardcore5":	"1",
+    "hardcore6":	"1",
+    "hardcore7":	"1",
+    "hardcore8":	"1",
+    "hardcore9":	"1",
+    "hardcore10":	"1",
+    "hardcore12":	"1",
+    "hardcore26":	"1",
+    "extreme7":	"1",
+    "hardcoreexp1":	"1",
+    "hardcoreexp2":	"1",
+    "hardcoreexp3":	"1",
+    "hardcoreexp4":	"1",
+    "hardcoreexp5":	"1",
+    "hardcoreexp6":	"1",
+    "hardcoreexp7":	"1",
+    "hardcoreexp8":	"1",
+    "hardcoreexp9":	"1",
+    "hardcoreexp10":	"1",
+    "hardcoreexp21":	"1",
+    "hardcoreexp22":	"1",
+    "hardcoreexp41":	"1",
+    "hardcoreexp50":	"1",
+    "zombie1":	"1",
+    "dm1":	"1",
+    "luna":	"1",
+    "venera":	"1",
+    "saturn":	"1",
+    "slowserver":	"1",
+    "paris":	"1",
+    "turkey":	"1",
+    "amsterdam":	"1",
+    "moscow":	"1",
+    "canada":	"1",
+    "london":	"1",
+    "siberia":	"1",
+    "kiev":	"1",
+    "minsk":	"1",
+    "usa1-newyork":	"1",
+    "usa2-newyork":	"1",
+    "usa3-newyork":	"1",
+    "singapore1":	"1",
+    "toronto":	"1",
+    "clanhousew.w":	"1",
+    "clanhouse18-25":	"1",
+    "clanhousefff":	"1",
+    "clanhousefbi":	"1",
+    "clanhouse•••":	"1",
+    "clanhousedsm":	"1",
+    "clanhousezzz":	"1",
+    "clanhouse72":	"1",
+    "clanhousezaw":	"1",
+    "clanhousepvl":	"1",
+    "clanhousedead":	"1",
+    "clanhouser2b":	"1",
+    "clanhouseng":	"1",
+    "clanhouseyolka":	"1",
+    "clanhousewin":	"1",
+    "clanhousefan":	"1",
+    "clanhouseup":	"1",
+    "clanhouserzr":	"1",
+    "clanhousehawk":	"1",
+    "clanhousezogo":	"1",
+    "clanhousegyg":	"1",
+    "clanhousepav":	"1",
+    "clanhousepride":	"1",
+    "clanhouseaob":	"1",
+    "clanhousenoteam1":	"1",
+    "clanhousetournament":	"1",
+    "clanhousetest":	"1"
+};
+if ('undefined' == typeof(settedlang)){ var settedlang = 'ru';}
 
+$.getScript('js/masonry.js', function() {
+    console.log('masonry loaded');
+});
+
+$.getScript('js/jquery-countdown.min.js', function() {
+    console.log('js countdown loaded');
+});
 
 /*========================++  CUT BELOW THIS LINE   ++======================================*/
 
@@ -247,14 +472,37 @@ var smc = {
     createMap: function(){
         smc.getJson(function(json){
             // sort json
-            var winners = smc.groupByServerType(json.winners);
-            smc.drawMap(json, winners);
+            var winnerGroups = smc.groupByServerType(json.winners);
+            smc.drawMap(json, winnerGroups, function(){
+
+                //run countdown
+                smc.runCountdown(json.nextPeriod);
+
+                // run redraw interwal
+                smc.startRedrawInterval(5000);
+            });
         });
     },
+    drawInnerMap: function(winnerGroups){
+
+        var content = '';
+
+        // get HTML
+        for (var group in winnerGroups) {
+            if (winnerGroups.hasOwnProperty(group)) {
+                content += smc.drawBlock(winnerGroups[group], group);
+            }
+        }
+
+        return content;
+    },
     destroyMap: function(){
+        smc.stopRedrawInterval();
+        smc.stopCountdown();
         $( "#server-map" ).remove();
     },
-    drawMap: function(originalJson, winners){
+    drawMap: function(originalJson, winnerGroups, callback){
+
         var mapControls =
             "<div class='map-controls'>" +
             '<a href="javascript:void(0)">'+
@@ -262,26 +510,121 @@ var smc = {
             '</a>' +
             "</div>";
 
-        var map =
+        var countdown = "<div class='countdown-container'><div class='countdown'></div></div>";
+
+        var map =  $(
             "<div id='server-map'>" +
             mapControls +
-            "<div class='map-inner'>" +
+            countdown+
+            "<div class='map-inner clearfix'>" +
+            smc.drawInnerMap(winnerGroups) +
             "</div>" +
-            "</div>";
-        map = $( map );
+            "</div>");
+
+
         $('body').append(map);
+
+        // organize blocks
+        smc.initMasonry(winnerGroups);
+
+        callback();
+
     },
-    drawBlock: function(block){},
-    drawServer: function(server){},
+    redrawMap: function(){
+
+        smc.getJson(function(json){
+            var winnerGroups = smc.groupByServerType(json.winners);
+
+            var innerHtml = "<div class='map-inner clearfix'>" +
+                smc.drawInnerMap(winnerGroups) +
+                "</div>";
+
+            $('#server-map .map-inner').replaceWith(innerHtml);
+
+            smc.initMasonry(winnerGroups);
+        });
+
+
+        //smc.destroyMap();
+        //smc.createMap();
+    },
+    drawBlock: function(block, key){
+        // get array of objects and iterate them with drawServer, then enclose into block div and return
+        var content = '';
+        block.forEach(function(server){
+            content += smc.drawServer(server);
+        });
+        return content;
+        //return '<div class="block clearfix " id="server-map-block-' + key + '">' + content + '</div>';
+    },
+    drawServer: function(server){
+        // get server object and draw it in div
+
+        var bgClanColor = server.clanPrefix ? 'background-color: ' + smc.getClanColor(server.clanPrefix) + ';' : '';
+        var nicknameClanColor = server.clanPrefix ? 'color: ' + smc.getClanColor(server.clanPrefix) + ';' : '';
+        var clanClass = server.clanPrefix ? ' clan ' : '';
+
+
+        var img = server.skinId ? '<img src="http://petridish.pw/engine/serverskins/' + server.skinId  + '.png">' : '';
+        var serv = '<div class="server-id">' + server.serverId + '</div>';
+        var nickname = '<div class="nickname ' + (server.isPersonal ? 'clan' : '') + '" style="'+ nicknameClanColor +'">' + server.fullNickName + '</div>';
+        //var clan = !server.isPersonal ? '<div class="clan-prefix">' + server.clanPrefix + '</div>' : '';
+        var points = '<div class="score"><span>' + smc.txt.score[settedlang] + '</span>' + server.score + '</div>';
+        var lifetime = '<div class="life-interval"><span>' + smc.txt.lifeInterval[settedlang] + '</span>' + smc.getLifetime(server.lifeInterval) + '</div>';
+
+
+
+        var masonryClass = 'grid-item--width' +  window.serverImportanceList[server.serverId] + ' grid-item--height' +  window.serverImportanceList[server.serverId];
+
+
+        var content =
+            '<div class="server switch-server map-server grid-item ' + masonryClass + clanClass + '" data-server="' + server.serverId + '" style="' + bgClanColor + '">' +
+                img +
+                '<div class="info">' +
+                    serv +
+                    nickname +
+                    //clan +
+                    points +
+                    lifetime +
+                '</div>' +
+            '</div>';
+        return content;
+    },
     toggleServerMap: function(){
         if ($('#server-map').length){
-            console.log('map is open');
+            //console.log('map is open');
             smc.destroyMap();
         } else {
-            console.log('map is closed');
+            //console.log('map is closed');
             smc.createMap();
         }
     },
+
+    //Masonry
+    masonry: {},
+    allMasonry: function(winnerGroups){
+        smc.masonry.all = $('#server-map .map-inner').masonry({
+            // options...
+            itemSelector: '.grid-item',
+            columnWidth: 100
+        });
+    },
+    blockMasonry: function(key){
+        smc.masonry[key] = $('#server-map-block-' +key).masonry({
+            // options...
+            itemSelector: '.grid-item',
+            columnWidth: 100
+        });
+    },
+    initMasonry: function(winnerGroups){
+        smc.allMasonry(winnerGroups);
+        /*for (var group in winnerGroups) {
+            if (winnerGroups.hasOwnProperty(group)) {
+                smc.blockMasonry(group);
+            }
+        }*/
+    },
+
 
     // JSON operations
     
@@ -328,6 +671,98 @@ var smc = {
 
         console.log(sorted);
         return sorted;
+    },
+
+
+
+    // all the other stuff
+    getRandomColor: function() {
+        var letters = 'ABCDEF'.split('');
+        var color = '#';
+        color += letters[Math.round(Math.random() * 5)];
+        letters = '0123456789ABCDEF'.split('');
+        for (var i = 0; i < 5; i++) {
+            color += letters[Math.round(Math.random() * 15)];
+        }
+        return color;
+    },
+
+
+
+    // coundown and interval
+
+    runCountdown: function(time){
+        function printCountdownText(event){
+            $(this).html(event.strftime(''
+                + '  <span>%H</span> : '
+                + '<span>%M</span> : '
+                + '<span>%S</span>'));
+        }
+
+        function countdownFinishAction(event){
+            console.log('countdown finished');
+            // redraw map
+            smc.redrawMap();
+
+
+        }
+
+
+        var nextPeriod = new Date(time);
+
+        console.log('initializing countdown to', nextPeriod);
+
+        $('#server-map .countdown').countdown(nextPeriod)
+            .on('update.countdown', printCountdownText)
+            .on('finish.countdown', countdownFinishAction)
+            .countdown('start');
+    },
+    stopCountdown: function(){
+        $('#server-map .countdown').countdown('stop');
+    },
+
+    startRedrawInterval: function(delay){
+
+        console.log('INTERVAL STARTED');
+
+        smc.timerId = setInterval(function() {
+            console.log('map redrawn by interval');
+            smc.redrawMap();
+        }, delay);
+    },
+
+    stopRedrawInterval: function(){
+        clearInterval(smc.timerId);
+    },
+
+
+    clanColors: {},
+
+    getClanColor: function(clan){
+        if (!smc.clanColors[clan]){
+            smc.clanColors[clan] = smc.getRandomColor();
+        }
+        return smc.clanColors[clan];
+    },
+    getLifetime: function(seconds){
+        var date = new Date(null);
+        date.setSeconds(seconds);
+        return date.toISOString().substr(11, 8);
+    },
+
+    txt: {
+        score: {
+            ru: 'Счёт: ',
+            en: 'Points: ',
+            fr: 'Points: ',
+            nl: 'Points: '
+        },
+        lifeInterval: {
+            ru: 'Время: ',
+            en: 'Time: ',
+            fr: 'Time: ',
+            nl: 'Time: '
+        }
     }
 };
 
