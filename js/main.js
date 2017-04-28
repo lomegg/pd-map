@@ -723,12 +723,16 @@ var smc = {
 
         var nextPeriod = new Date(time);
 
-        console.log('initializing countdown to', nextPeriod);
+        if (nextPeriod > new Date()){
+            console.log('initializing countdown to', nextPeriod);
 
-        $('#server-map .countdown').countdown(nextPeriod)
-            .on('update.countdown', printCountdownText)
-            .on('finish.countdown', countdownFinishAction)
-            .countdown('start');
+            $('#server-map .countdown').countdown(nextPeriod)
+                .on('update.countdown', printCountdownText)
+                .on('finish.countdown', countdownFinishAction)
+                .countdown('start');
+        } else {
+            console.log('countdown time is outdated');
+        }
     },
     stopCountdown: function(){
         $('#server-map .countdown').countdown('stop');
