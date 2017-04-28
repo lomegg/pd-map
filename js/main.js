@@ -479,7 +479,7 @@ var smc = {
                 smc.runCountdown(json.nextPeriod);
 
                 // run redraw interwal
-                smc.startRedrawInterval(5000);
+                smc.startRedrawInterval(25000);
             });
         });
     },
