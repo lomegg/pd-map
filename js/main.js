@@ -643,11 +643,6 @@ var smc = {
     
     getJson: function(callback){
         // TODO: replace with absolute path
-/*
-        $.getJSON('shop_winners/4.json', function (obj) {
-            return callback(obj);
-        });
-*/
 
         $.getJSON('shop_winners/4.json', function (obj) {
             return callback(obj);
@@ -721,9 +716,8 @@ var smc = {
         function countdownFinishAction(event){
             console.log('countdown finished');
             // redraw map
-            smc.redrawMap();
-
-
+            smc.destroyMap();
+            smc.createMap();
         }
 
 
