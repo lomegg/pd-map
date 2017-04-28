@@ -565,14 +565,19 @@ var smc = {
         var clanClass = server.clanPrefix ? ' clan ' : '';
 
 
+        // primary info
         var img = server.skinId ? '<img src="http://petridish.pw/engine/serverskins/' + server.skinId  + '.png">' : '';
         var serv = '<div class="server-id">' + server.serverId + '</div>';
         var nickname = '<div class="nickname ' + (server.isPersonal ? 'clan' : '') + '" style="'+ nicknameClanColor +'">' + server.fullNickName + '</div>';
         //var clan = !server.isPersonal ? '<div class="clan-prefix">' + server.clanPrefix + '</div>' : '';
         var points = '<div class="score"><span>' + smc.txt.score[settedlang] + '</span>' + server.score + '</div>';
-        var lifetime = '<div class="life-interval"><span>' + smc.txt.lifeInterval[settedlang] + '</span>' + smc.getLifetime(server.lifeInterval) + '</div>';
+        //var lifetime = '<div class="life-interval"><span>' + smc.txt.lifeInterval[settedlang] + '</span>' + smc.getLifetime(server.lifeInterval) + '</div>';
 
 
+        // hover info
+        var playAt = '<div class="txt">'+ smc.txt.playAt[settedlang] + '</div>';
+        var beat = '<div class="txt">'+ smc.txt.beatTheRecord[settedlang] + '</div>';
+        //var record = '<div class="record">'+  + '<div>';
 
         var masonryClass = 'grid-item--width' +  window.serverImportanceList[server.serverId] + ' grid-item--height' +  window.serverImportanceList[server.serverId];
 
@@ -585,7 +590,15 @@ var smc = {
                     nickname +
                     //clan +
                     points +
-                    lifetime +
+                    //lifetime +
+                '</div>' +
+                '<div class="info hover-info">' +
+                    playAt +
+                    serv +
+                    beat +
+                    nickname +
+                    points +
+                        //lifetime +
                 '</div>' +
             '</div>';
         return content;
@@ -630,10 +643,16 @@ var smc = {
     
     getJson: function(callback){
         // TODO: replace with absolute path
+/*
+        $.getJSON('shop_winners/4.json', function (obj) {
+            return callback(obj);
+        });
+*/
 
         $.getJSON('shop_winners/4.json', function (obj) {
             return callback(obj);
         });
+
     },
     getServerModeList: function(){
         // get server modes list by server name
@@ -762,12 +781,18 @@ var smc = {
             en: 'Time: ',
             fr: 'Time: ',
             nl: 'Time: '
+        },
+        playAt: {
+            ru: 'Играть на',
+            en: 'Play at',
+            fr: 'Play at',
+            nl: 'Play at'
+        },
+        beatTheRecord: {
+            ru: 'и побить рекорд',
+            en: 'and beat the record',
+            fr: 'and beat the record',
+            nl: 'and beat the record'
         }
     }
 };
-
-
-
-
-
-

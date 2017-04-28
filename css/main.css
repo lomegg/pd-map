@@ -15,13 +15,16 @@
     background: linear-gradient(to right, #53346D, #000000);
 
 */
+    /*
     background-color: #6d695c;
     background-image:
     repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
     repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
     linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
     linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
-    background-size: 70px 120px;
+    background-size: 70px 120px;*/
+    background: url('../img/1.jpg');
+    background-size: contain;
 }
 
 #server-map .map-controls{
@@ -146,6 +149,17 @@
     text-shadow: 1px 1px 1px black;
 }
 #server-map .map-inner .map-server:hover .info{
+    display: none;
+}
+
+#server-map .map-inner .map-server .info.hover-info{
+    display: none;
+}
+#server-map .map-inner .map-server:hover .info.hover-info{
+    display: block;
+}
+
+#server-map .map-inner .map-server:hover .info{
     background: rgba(18, 6, 6, 0.72);
 }
 
@@ -158,6 +172,9 @@
 #server-map .grid-item img {
     width: 90px;
     height: 90px;
+}
+#server-map .map-inner .map-server:hover img{
+    display: none;
 }
 
 
@@ -194,10 +211,11 @@
 
 
 #server-map. grid-item .info .clan-prefix{}
-#server-map .grid-item .info .score{    font-size: 70%; visibility: hidden;}
+
+#server-map .grid-item .info .score{    font-size: 90%; visibility: hidden;}
 #server-map .map-inner .map-server:hover .info .score{visibility: visible;}
 
-#server-map .grid-item .info .life-interval{   font-size: 70%; visibility: hidden;}
+#server-map .grid-item .info .life-interval{   display: none; font-size: 70%; visibility: hidden;}
 #server-map .map-inner .map-server:hover .info .life-interval{ visibility: visible; }
 
 
