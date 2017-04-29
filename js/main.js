@@ -436,11 +436,11 @@ window.serverImportanceList = {
 if ('undefined' == typeof(settedlang)){ var settedlang = 'ru';}
 
 $.getScript('js/masonry.js', function() {
-    console.log('masonry loaded');
+    //console.log('masonry loaded');
 });
 
 $.getScript('js/jquery-countdown.min.js', function() {
-    console.log('js countdown loaded');
+    //console.log('js countdown loaded');
 });
 
 /*========================++  CUT BELOW THIS LINE   ++======================================*/
@@ -724,14 +724,14 @@ var smc = {
         var nextPeriod = new Date(time);
 
         if (nextPeriod > new Date()){
-            console.log('initializing countdown to', nextPeriod);
+            //console.log('initializing countdown to', nextPeriod);
 
             $('#server-map .countdown').countdown(nextPeriod)
                 .on('update.countdown', printCountdownText)
                 .on('finish.countdown', countdownFinishAction)
                 .countdown('start');
         } else {
-            console.log('countdown time is outdated');
+            //console.log('countdown time is outdated');
         }
     },
     stopCountdown: function(){
@@ -740,10 +740,10 @@ var smc = {
 
     startRedrawInterval: function(delay){
 
-        console.log('INTERVAL STARTED');
+        //console.log('INTERVAL STARTED');
 
         smc.timerId = setInterval(function() {
-            console.log('map redrawn by interval');
+            //console.log('map redrawn by interval');
             smc.redrawMap();
         }, delay);
     },
@@ -794,3 +794,9 @@ var smc = {
         }
     }
 };
+
+
+
+$(document).on('click', '.map-server.grid-item', function(event){
+    smc.destroyMap();
+});
