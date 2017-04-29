@@ -585,14 +585,14 @@ var smc = {
         var content =
             '<div class="server switch-server map-server grid-item ' + masonryClass + clanClass + '" data-server="' + server.serverId + '" style="' + bgClanColor + '">' +
                 img +
-                '<div class="info">' +
+                '<div class="map-serv-info">' +
                     serv +
                     nickname +
                     //clan +
                     points +
                     //lifetime +
                 '</div>' +
-                '<div class="info hover-info">' +
+                '<div class="map-serv-info hover-info">' +
                     playAt +
                     serv +
                     beat +
@@ -683,7 +683,7 @@ var smc = {
             }
         }
 
-        console.log(sorted);
+        //console.log(sorted);
         return sorted;
     },
 
@@ -714,7 +714,7 @@ var smc = {
         }
 
         function countdownFinishAction(event){
-            console.log('countdown finished');
+            //console.log('countdown finished');
             // redraw map
             smc.destroyMap();
             smc.createMap();
