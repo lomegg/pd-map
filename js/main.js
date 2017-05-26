@@ -452,7 +452,8 @@ $(document).on("keydown", function(event){
     //console.log(event);
 
     // toggle map if M pressed
-    if (event.which == 77){
+    if (event.which == 77 && (!isTyping)){
+        if(typeof yaCounter30886916 !== 'undefined') { yaCounter30886916.reachGoal('mapmet'); }
         smc.toggleServerMap();
     }
 });
