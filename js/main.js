@@ -472,7 +472,8 @@ var smc = {
     // Map drawing
     
     createMap: function(){
-        smc.getJson(function(json){
+        // get winners json and draw them
+        smc.getJson(null, function(json){
             // sort json
             var winnerGroups = smc.groupByServerType(json.winners);
             smc.drawMap(json, winnerGroups, function(){
@@ -484,6 +485,14 @@ var smc = {
                 smc.startRedrawInterval(25000);
             });
         });
+        // get top json and draw them
+
+        smc.getJson('shop_winners/long-period-tops.json', function(json){
+            // get the result to show
+            smc.drawTopList(json);
+        });
+
+
     },
     drawInnerMap: function(winnerGroups){
 
@@ -534,7 +543,7 @@ var smc = {
     },
     redrawMap: function(){
 
-        smc.getJson(function(json){
+        smc.getJson(null, function(json){
             var winnerGroups = smc.groupByServerType(json.winners);
 
             var innerHtml = "<div class='map-inner clearfix'>" +
@@ -547,8 +556,10 @@ var smc = {
         });
 
 
-        //smc.destroyMap();
-        //smc.createMap();
+        smc.getJson('shop_winners/long-period-tops.json', function(json){
+            // get the result to show
+            smc.drawTopList(json);
+        });
     },
     drawBlock: function(block, key){
         // get array of objects and iterate them with drawServer, then enclose into block div and return
@@ -615,6 +626,28 @@ var smc = {
         }
     },
 
+    // Tops list
+    drawTopList: function(json){
+
+        var winners = '<div id="long-winners"><h3>' + (settedlang == 'ru' ? 'Топ игроков' : 'Top players') +  '</h3><ol>';
+        winners += json.reduce(function(previousValue, currentValue, index, array) {
+            return previousValue + '<li>'
+                + currentValue.nickname + ': <strong>' + currentValue.winsCount + '</strong>'
+                + '</li>';
+        }, '');
+        winners += '</ol></div>';
+
+
+        var winnersDiv = $('#long-winners');
+        if (winnersDiv.length){
+            winnersDiv.replaceWith($(winners));
+        } else {
+            $("#server-map").append($(winners));
+        }
+    },
+
+
+
     //Masonry
     masonry: {},
     allMasonry: function(winnerGroups){
@@ -643,10 +676,13 @@ var smc = {
 
     // JSON operations
     
-    getJson: function(callback){
-        // TODO: replace with absolute path
+    getJson: function(url, callback){
 
-        $.getJSON('shop_winners/4.json', function (obj) {
+        if (!url){
+            url = 'shop_winners/4.json';
+        }
+
+        $.getJSON(url, function (obj) {
             return callback(obj);
         });
 

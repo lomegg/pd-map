@@ -231,3 +231,40 @@
 #server-map .grid-item--height2{ height: 200px; }
 #server-map .grid-item--height3{ height: 300px; }
 #server-map .grid-item--height4{ height: 400px; }
+
+
+
+/*/-------------------------/*/
+
+#long-winners{
+    font-family: Arial;
+    position: absolute;
+    top: 0;
+    z-index: 99999;
+    left: 0;
+    background: rgba(0, 0, 0, 0.33);
+    color: white;
+    font-size: 16px;
+    text-align: left;
+    padding: 20px;
+}
+#long-winners h3{
+    margin: 0;
+    font-size: 18px;
+}
+#long-winners ol{
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+#long-winners ol li{
+    margin: 0 0 5px 0;
+}
+#long-winners ol li:nth-child(1){
+    color: gold;
+}
+#long-winners ol li:nth-child(2){
+    color: #6affe1;
+}
+#long-winners ol li:nth-child(3){
+    color: coral;
+}
