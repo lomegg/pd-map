@@ -434,6 +434,7 @@ window.serverImportanceList = {
     "clanhousetest":	"1"
 };
 if ('undefined' == typeof(settedlang)){ var settedlang = 'ru';}
+if ('undefined' == typeof(isTyping)){ var isTyping = false;}
 
 $.getScript('js/masonry.js', function() {
     //console.log('masonry loaded');
