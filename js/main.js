@@ -630,7 +630,7 @@ var smc = {
     // Tops list
     drawTopList: function(json){
 
-        var winners = '<div id="long-winners"><h3>' + (settedlang == 'ru' ? 'Топ игроков' : 'Top players') +  '</h3><ol>';
+        var winners = '<div id="long-winners"><h3>' + (settedlang == 'ru' ? 'Топ недели' : 'Top of the week') +  '</h3><ol>';
         winners += json.reduce(function(previousValue, currentValue, index, array) {
             return previousValue + '<li>'
                 + currentValue.nickname + ': <strong>' + currentValue.winsCount + '</strong>'
