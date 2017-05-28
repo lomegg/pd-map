@@ -485,14 +485,6 @@ var smc = {
                 smc.startRedrawInterval(25000);
             });
         });
-        // get top json and draw them
-
-        smc.getJson('shop_winners/long-period-tops.json', function(json){
-            // get the result to show
-            smc.drawTopList(json);
-        });
-
-
     },
     drawInnerMap: function(winnerGroups){
 
@@ -514,6 +506,13 @@ var smc = {
     },
     drawMap: function(originalJson, winnerGroups, callback){
 
+        // get top json and draw them
+        var topListJson = '';
+        smc.getJson('shop_winners/long-period-tops.json', function(json){
+            topListJson = json;
+        });
+
+
         var mapControls =
             "<div class='map-controls'>" +
             '<a href="javascript:void(0)">'+
@@ -530,6 +529,7 @@ var smc = {
             "<div class='map-inner clearfix'>" +
             smc.drawInnerMap(winnerGroups) +
             "</div>" +
+            smc.drawTopList(topListJson) +
             "</div>");
 
 
@@ -543,23 +543,24 @@ var smc = {
     },
     redrawMap: function(){
 
+        var topListJson = '';
+        smc.getJson('shop_winners/long-period-tops.json', function(json){
+            topListJson = json;
+        });
+
         smc.getJson(null, function(json){
             var winnerGroups = smc.groupByServerType(json.winners);
 
             var innerHtml = "<div class='map-inner clearfix'>" +
                 smc.drawInnerMap(winnerGroups) +
-                "</div>";
+                "</div>" +
+                smc.drawTopList(topListJson);
 
             $('#server-map .map-inner').replaceWith(innerHtml);
 
             smc.initMasonry(winnerGroups);
         });
 
-
-        smc.getJson('shop_winners/long-period-tops.json', function(json){
-            // get the result to show
-            smc.drawTopList(json);
-        });
     },
     drawBlock: function(block, key){
         // get array of objects and iterate them with drawServer, then enclose into block div and return
@@ -637,13 +638,7 @@ var smc = {
         }, '');
         winners += '</ol></div>';
 
-
-        var winnersDiv = $('#long-winners');
-        if (winnersDiv.length){
-            winnersDiv.replaceWith($(winners));
-        } else {
-            $("#server-map").append($(winners));
-        }
+        return winners;
     },
 
 
