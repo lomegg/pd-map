@@ -677,8 +677,13 @@ var smc = {
             url = 'shop_winners/4.json';
         }
 
-        $.getJSON(url, function (obj) {
-            return callback(obj);
+        $.ajax({
+            dataType: "json",
+            url: url,
+            async: false,
+            success: function(obj) {
+                return callback(obj);
+            }
         });
 
     },
